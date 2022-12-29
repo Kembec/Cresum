@@ -1,0 +1,73 @@
+
+#my-resume > .right {
+	@apply flex flex-col space-y-5 lg:col-span-2;
+}
+
+#my-resume > .right > div {
+	@apply w-full p-0;
+}
+#my-resume > .right > div:not(.buttons) > * {
+	@apply mx-7 first:mt-7 last:mb-7 lg:mx-10 lg:first:mt-10 lg:last:mb-10;
+}
+
+#my-resume > .right .box {
+	@apply relative flex flex-col space-y-1.5 rounded-xl border border-black/5 !bg-opacity-10 p-5 bg-blend-multiply drop-shadow-sm;
+}
+#my-resume > .right .box > * {
+	@apply first-letter:uppercase;
+}
+#my-resume > .right .box > b {
+	@apply text-2xl;
+}
+#my-resume > .right .box > small {
+	@apply !opacity-70;
+}
+#my-resume > .right .box > img {
+	@apply relative mx-auto !mb-5 max-h-56 rounded-lg;
+}
+#my-resume > .right .box > img::after {
+	@apply absolute top-0 left-0 z-50 w-full content-[attr(title)];
+}
+#my-resume > .right .tab > button,
+#my-resume > .right .box > button {
+	@apply absolute top-3 right-4 opacity-70 hover:text-red-500;
+}
+
+#my-resume > .right .tab {
+	@apply relative mb-5 flex flex-col flex-nowrap rounded-lg border border-black/5 !bg-opacity-10 drop-shadow-sm lg:flex-row;
+}
+#my-resume > .right .tab > div {
+	@apply flex flex-col justify-center p-5 first:min-w-fit first:pb-0 first:lg:pb-5;
+}
+#my-resume > .right .tab > div > * {
+	@apply first-letter:uppercase;
+}
+#my-resume > .right .tab > div > b {
+	@apply text-2xl;
+}
+#my-resume > .right .tab > div > .icon {
+	@apply mx-5 text-4xl;
+}
+
+#my-resume > .right h2,
+#my-resume > .right h3 {
+	@apply mb-7 flex flex-nowrap space-x-3 text-4xl font-bold antialiased;
+}
+#my-resume > .right h2 {
+	@apply text-4xl;
+}
+#my-resume > .right h3 {
+	@apply text-2xl;
+}
+#my-resume > .right h2 > *,
+#my-resume > .right h3 > * {
+	@apply my-auto;
+}
+#my-resume > .right h2 > button,
+#my-resume > .right h3 > button {
+	@apply flex rounded-md text-lg leading-[0];
+}
+
+#my-resume > .right > * > h3{
+	@apply first-of-type:mt-0;
+}

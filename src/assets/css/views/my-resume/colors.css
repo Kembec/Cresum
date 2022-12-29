@@ -1,0 +1,55 @@
+
+#my-resume .gray {
+	@apply bg-gray-300;
+}
+#my-resume .red {
+	@apply bg-red-300;
+}
+#my-resume .orange {
+	@apply bg-orange-300;
+}
+#my-resume .amber {
+	@apply bg-amber-300;
+}
+#my-resume .yellow {
+	@apply bg-yellow-300;
+}
+#my-resume .lime {
+	@apply bg-lime-300;
+}
+#my-resume .green {
+	@apply bg-green-300;
+}
+#my-resume .emerald {
+	@apply bg-emerald-300;
+}
+#my-resume .teal {
+	@apply bg-teal-300;
+}
+#my-resume .cyan {
+	@apply bg-cyan-300;
+}
+#my-resume .sky {
+	@apply bg-sky-300;
+}
+#my-resume .blue {
+	@apply bg-blue-300;
+}
+#my-resume .indigo {
+	@apply bg-indigo-300;
+}
+#my-resume .violet {
+	@apply bg-violet-300;
+}
+#my-resume .purple {
+	@apply bg-purple-300;
+}
+#my-resume .fuchsia {
+	@apply bg-fuchsia-300;
+}
+#my-resume .pink {
+	@apply bg-pink-300;
+}
+#my-resume .rose {
+	@apply bg-rose-300;
+}

@@ -1,0 +1,18 @@
+#home {
+	@apply mx-5 flex flex-col space-y-10 pt-10 pb-40 lg:space-y-20 lg:px-[25vw];
+}
+#home > h1 {
+	@apply text-center text-4xl font-extrabold lg:text-6xl xl:text-8xl;
+}
+#home > h2 {
+	@apply text-center text-3xl font-extrabold lg:text-5xl xl:text-7xl;
+}
+#home > img {
+	@apply my-auto rounded-xl border border-black/5 bg-white object-contain shadow-lg lg:p-5;
+}
+#home > img:not(:first-of-type) {
+	@apply mx-5 lg:mx-16;
+}
+#home > a {
+	@apply mx-auto rounded-lg bg-black px-16 py-4 text-3xl font-bold tracking-wider text-white antialiased hover:bg-black/80 lg:px-20 lg:py-5 lg:text-6xl;
+}

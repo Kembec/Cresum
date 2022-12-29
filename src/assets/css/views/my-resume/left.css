@@ -1,0 +1,13 @@
+
+#my-resume > .left {
+	@apply mt-32 flex flex-col lg:mt-40;
+}
+#my-resume > .left > div {
+	@apply space-y-7 pt-0;
+}
+#my-resume > .left > div > b {
+	@apply !mt-40 text-center text-3xl;
+}
+#my-resume > .left > div > span {
+	@apply rounded-2xl bg-black/5 px-5 py-2 text-center text-base font-semibold tracking-wide antialiased bg-blend-difference;
+}

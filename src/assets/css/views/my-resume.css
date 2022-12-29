@@ -1,0 +1,13 @@
+@import "./my-resume/colors.css";
+@import "./my-resume/left.css";
+@import "./my-resume/right.css";
+
+#my-resume {
+	@apply mb-10 grid grid-cols-1 gap-5 px-5 lg:grid-cols-3 lg:px-[10vw] xl:px-[20vw];
+}
+#my-resume > div {
+	@apply col-span-1 last:lg:col-span-2;
+}
+#my-resume > * > div {
+	@apply relative flex w-full flex-col rounded-2xl border border-black/5 bg-white p-10 shadow-xl shadow-black/5;
+}

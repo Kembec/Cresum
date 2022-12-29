@@ -1,0 +1,53 @@
+.modal-13 {
+	@apply w-10/12 lg:w-2/4 lg:min-w-min xl:w-1/3;
+}
+.modal-14 {
+	@apply w-10/12 lg:w-2/6 lg:min-w-min xl:w-1/4;
+}
+.modal-24 {
+	@apply w-10/12 lg:w-4/6 lg:min-w-min xl:w-2/4;
+}
+.modal-46 {
+	@apply w-10/12 lg:w-9/12 lg:min-w-min xl:w-4/6;
+}
+.modal-56 {
+	@apply w-5/6;
+}
+
+#modal:empty {
+	@apply hidden;
+}
+#modal:not(:empty) {
+	@apply fixed top-0 left-0 !z-[52] flex h-screen w-screen select-none flex-col items-center justify-center opacity-100 transition-all ease-in-out;
+}
+#modal .close-modal {
+	@apply absolute right-5 top-[1.125rem] z-30 items-center text-slate-400 hover:text-red-500 print:hidden;
+}
+#modal > * {
+	@apply center-absolute absolute z-50 flex max-h-[70vh] min-h-[calc(25vh-3rem)] flex-col justify-start overflow-auto rounded-lg lg:max-h-[calc(100vh-9rem)];
+}
+#modal > * > * {
+	@apply bg-white px-5 first:rounded-t-lg first:pt-5 last:rounded-b-lg last:!pb-5;
+}
+#modal > * > .header {
+	@apply sticky top-0 flex flex-nowrap pb-5 font-bold;
+}
+#modal > * > .header > * {
+	@apply my-auto text-lg first-letter:uppercase;
+}
+#modal > * > .content {
+	@apply flex flex-col;
+}
+#modal > * > .submit {
+	@apply relative flex max-h-[3.75rem] min-h-[3.75rem] w-full flex-nowrap justify-center space-x-2 bg-black px-5 text-center text-base font-bold uppercase tracking-wider text-white transition-all hover:bg-[#3a3a3a] hover:tracking-widest !important;
+}
+#modal > * > .submit > * {
+	@apply z-10 my-auto;
+}
+#modal > * > .submit::before {
+	@apply absolute left-1/2 top-1/2 z-10 -translate-x-1/2 -translate-y-1/2 drop-shadow-md content-[attr(title)];
+}
+
+#modal:not(:empty)::after {
+	@apply fixed left-0 top-0 -z-10 h-screen w-screen bg-black/40 content-[""];
+}
